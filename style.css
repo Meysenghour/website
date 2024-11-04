@@ -1,0 +1,71 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Audio player container */
+.audio-player {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Play/Pause Button */
+#play-pause-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+#play-pause-button:focus {
+    outline: none;
+}
+
+/* Progress Container */
+.progress-container {
+    position: relative;
+    flex-grow: 1;
+    height: 5px;
+    background-color: #ddd;
+    border-radius: 3px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #007bff;
+}
+
+/* Time Display */
+.time-container {
+    font-size: 12px;
+    color: #333;
+    margin-left: 10px;
+}
+
+/* Volume Control */
+#volume-control {
+    margin-left: 15px;
+}
